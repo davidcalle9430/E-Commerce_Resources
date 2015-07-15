@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Product example webpage">
+    <meta name="author" content="Fabián Merchán, David Calle">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="CSS/Style.css" rel="stylesheet">
+    <script src="JQuery/jquery-1.11.3.min.js"></script>
+  </head>
+
+  <body>
+    <h1 class="text-center">
+      Nombre del producto</br>
+      <small class="text-center">Marca</small>
+    </h1>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="centered-block">
+          <div class="col-md-1">
+            <ul class="list-group">
+              <li class="list-group-item">S</li>
+              <li class="list-group-item">XS</li>
+              <li class="list-group-item">M</li>
+              <li class="list-group-item">L</li>
+              <li class="list-group-item">XL</li>
+            </ul>
+        </div>
+        <div class="col-md-4">
+          <div style="background:blue;">
+            imagen
+          </div>
+        </div>
+        <div class="col-md-1">
+          <div style="background:blue;">
+            imagen
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+
+</html>
