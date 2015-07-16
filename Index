@@ -8,8 +8,8 @@
     <meta name="description" content="Product example webpage">
     <meta name="author" content="Fabián Merchán, David Calle">
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="CSS/Style.css" rel="stylesheet">
-    <script src="JQuery/jquery-1.11.3.min.js"></script>
+    <link href="/static/e-res/CSS/Style.css" rel="stylesheet">
+    <script src="/static/e-res/JQuery/jquery-1.11.3.min.js"></script>
   </head>
 
   <body>
