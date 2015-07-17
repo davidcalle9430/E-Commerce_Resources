@@ -23,13 +23,13 @@
       <div class="row">
         <div class="centered-block">
           <div class="col-md-1">
-            <ul class="list-group">
-              <li class="list-group-item">S</li>
-              <li class="list-group-item">XS</li>
-              <li class="list-group-item">M</li>
-              <li class="list-group-item">L</li>
-              <li class="list-group-item">XL</li>
-            </ul>
+            <div class="btn-group">
+              <button type="button" class="btn btn-default">S</button>
+              <button type="button" class="btn btn-default">XS</button>
+              <button type="button" class="btn btn-default">M</button>
+              <button type="button" class="btn btn-default">L</button>
+              <button type="button" class="btn btn-default">X</button>
+            </div>
         </div>
         <div class="col-md-4">
           <div style="background:blue;">
