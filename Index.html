@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="CSS/Style.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="Uikit/css/uikit.min.css"/>
     <link rel="stylesheet" href="Uikit/css/components/slidenav.css"/>
@@ -11,9 +11,10 @@
     <script src="JQuery/jquery-1.11.3.min.js"></script>
     <script src="Uikit/js/uikit.min.js"></script>
     <script src="Uikit/js/components/slider.js"></script>
+    <script src="js/input_quantity.js"></script>
   </head>
 
-  <body>
+  <body bgcolor="silver">
 
     <div class="container">
       <div class="centered-block">
@@ -47,14 +48,6 @@
 
     </br>
     <div class="container">
-      <h1> Nombre del producto <small> Marca</small> </h1>
-      <div class="lead">
-        <p class="text-justify">Se trata de uno de los tipos más populares de ropa interior de las mujeres. Son muy similares a las bragas tanga. A menudo se usa como ropa de dormir debajo de las señoras,increíble de ropa interior de mujer, sostenes y ropa de dormir de señoras de la marca La Senza queda plena confianza. Ropa Interior Masculina pantalones vaqueros de baja altura, pantalones, faldas y otro tipo de ropa que puede mostrar líneas de las medias. Esta ropa interior se considera muy sexy y están disponibles en diferentes diseños, colores y telas. Con correa se usan a menudo por debajo de los trajes de baño reveladores. Ropa interior tanga hoy en día se viene en tela grande y por lo tanto proporciona gran confort para el usuario.</p>
-      </div>
-    </div>
-
-    </br>
-    <div class="container">
       <div class="uk-slidenav-position" data-uk-slider>
           <div class="uk-slider-container">
               <ul class="uk-slider uk-grid-width-medium-1-4">
@@ -73,32 +66,84 @@
       </div>
     </div>
 
-    </br>
+    <!--bloque de añadir al carrito-->
     <div class="container" >
-      <div class="row">
-          <div class="col-xs-12 col-md-6">
-            <div class="centered-block">
-              <div class="btn-group">
-                <button type="button" class="btn btn-default">S</button>
-                <button type="button" class="btn btn-default">M</button>
-                <button type="button" class="btn btn-default">L</button>
-                <button type="button" class="btn btn-default">XL</button>
+      <div class="well">
+        <div class="addToCart">
+
+          <!-- Tallas y cantidad -->
+          <div class="row">
+
+            <!-- tallas -->
+            <div class="col-xs-12 col-md-6">
+              <div class="centered-block">
+                <div class="margintop">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-default btn-lg">S</button>
+                    <button type="button" class="btn btn-default btn-lg">M</button>
+                    <button type="button" class="btn btn-default btn-lg">L</button>
+                    <button type="button" class="btn btn-default btn-lg">XL</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- cantidad -->
+            <div class="col-xs-12 col-md-6">
+              <div class="centered-block">
+                <div class="quantityBarSize">
+                  <div class="input-group">
+                    <span class="input-group-btn">
+                      <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                        <span class="glyphicon glyphicon-minus"></span>
+                      </button>
+                    </span>
+                    <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+                    <span class="input-group-btn">
+                      <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                        <span class="glyphicon glyphicon-plus"></span>
+                      </button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- precio y boton -->
+          <div class="row">
+            <div class="col-xs-12 col-md-6">
+              <div class="centered-block">
+                <div class="margintop">
+                  <h1>$30 USD</h1>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-md-6">
+              <div class="centered-block">
+                <div class="margintop">
+                  <button type="button" class="btn btn-success btn-lg">
+                    <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                    Add to shopping cart
+                  </button>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="col-xs-12 col-md-6">
-            <input type="text" class="form-control bfh-number">
-          </div>
+        </div>
       </div>
     </div>
 
 
     </br>
-    <div class="container" >
-      <div class="col-xs-12 col-md-6">
+    <div class="container">
+      <h1> Nombre del producto <small> Marca</small> </h1>
+      <div class="lead">
+        <p class="text-justify">Se trata de uno de los tipos más populares de ropa interior de las mujeres. Son muy similares a las bragas tanga. A menudo se usa como ropa de dormir debajo de las señoras,increíble de ropa interior de mujer, sostenes y ropa de dormir de señoras de la marca La Senza queda plena confianza. Ropa Interior Masculina pantalones vaqueros de baja altura, pantalones, faldas y otro tipo de ropa que puede mostrar líneas de las medias. Esta ropa interior se considera muy sexy y están disponibles en diferentes diseños, colores y telas. Con correa se usan a menudo por debajo de los trajes de baño reveladores. Ropa interior tanga hoy en día se viene en tela grande y por lo tanto proporciona gran confort para el usuario.</p>
       </div>
-    </div>
     </div>
 
   </body>
