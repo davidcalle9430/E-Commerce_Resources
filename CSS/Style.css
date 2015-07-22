@@ -20,3 +20,13 @@
   margin-top:50px;
   margin-bottom:50px;
 }
+
+.fixed-height{
+  min-height: 1000px;
+  max-height: 1000px;
+}
+
+.imagecontainer {
+    background-size:100px 100px ;
+    background-color: "#0000FF";
+}
