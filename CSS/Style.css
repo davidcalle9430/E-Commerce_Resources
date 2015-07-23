@@ -21,12 +21,15 @@
   margin-bottom:50px;
 }
 
-.fixed-height{
-  min-height: 1000px;
-  max-height: 1000px;
+.container_img {
+    height:400px;
 }
 
-.imagecontainer {
-    background-size:100px 100px ;
-    background-color: "#0000FF";
+.container_img img {
+  max-height:100%;
+  max-width: 100%;
+}
+
+body{
+  background-color: #EEE;
 }
