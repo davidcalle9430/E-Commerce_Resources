@@ -53,13 +53,13 @@ body{
 
   .addToCart_component{
     white-space: normal;
-    font-size: 3em;
+    font-size: 2em;
     min-width: 75px;
-    width: 100%;
-    height: 100px;
+    width: 75%;
+    height: 50px;
   }
 
   h1{
-    font-size: 50px;
+    font-size: 3em;
   }
 }
