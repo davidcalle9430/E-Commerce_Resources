@@ -30,6 +30,15 @@
   max-width: 100%;
 }
 
+.container_thumbnail {
+    height:100px;
+}
+
+.container_thumbnail img {
+  max-height:100%;
+  max-width: 100%;
+}
+
 body{
   background-color: #EEE;
 }
