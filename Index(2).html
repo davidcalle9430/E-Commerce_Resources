@@ -9,16 +9,86 @@
     <link rel="stylesheet" href="Uikit/css/components/slidenav.min.css"/>
     <link rel="stylesheet" href="Uikit/css/components/slideshow.min.css"/>
     <link rel="stylesheet" href="Uikit/css/components/dotnav.min.css"/>
+    <link rel="stylesheet" href="flexnav/css/flexnav.css">
     <link rel="stylesheet" href="css/style.css"/>
-    <script src="JQuery/jquery-1.11.3.min.js"></script>
-    <script src="Uikit/js/uikit.min.js"></script>
-    <script src="Uikit/js/components/slideshow.min.js"></script>
-    <script src="js/input_quantity.js"></script>
+    <script type="text/javascript" src="JQuery/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="Uikit/js/uikit.min.js"></script>
+    <script type="text/javascript" src="Uikit/js/components/slideshow.min.js"></script>
+    <script type="text/javascript" src="js/input_quantity.js"></script>
+    <script type="text/javascript" src="flexnav/js/jquery.flexnav.min.js"></script>
+    <script type="text/javascript">
+      $(".flexnav").flexNav();
+    </script>
+
   </head>
 
   <body>
 
     <div class="container">
+
+        <div class="menu-button">
+          Menu
+          <span class="touch-button">
+            <i class="navicon">▼</i>
+          </span>
+        </div>
+        <nav>
+          <ul data-breakpoint="800" class="flexnav with-js opacity lg-screen">
+            <li class="item-with-ul"><a href="">Item 1</a>
+              <ul class="" style="display: none;">
+                <li> <a href="#content">Sub 1 Item 1</a></li>
+                <li><a href="/">Sub 1 Item 2</a></li>
+                <li><a href="/">Sub 1 Item 3</a></li>
+                <li><a href="/">Sub 1 Item 4</a></li>
+              </ul>
+            <span class="touch-button"><i class="navicon">▼</i></span></li>
+            <li class="item-with-ul"><a href="/">Item 2</a>
+              <ul class="open" style="display: none;">
+                <li><a href="/">Sub 1 Item 1</a></li>
+                <li class="item-with-ul"><a href="/">Sub 1 Item 2</a>
+                  <ul style="display: none;">
+                    <li><a href="/">Sub 2 Item 1</a></li>
+                    <li><a href="http://jasonweaver.name/">Sub 2 Item 2</a></li>
+                    <li><a href="http://jasonweaver.name/">Sub 2 Item 3</a></li>
+                  </ul>
+                <span class="touch-button"><i class="navicon">▼</i></span></li>
+                <li class="item-with-ul"><a href="http://jasonweaver.name/">Sub 1 Item 3</a>
+                  <ul style="display: none;" class="">
+                    <li><a href="http://jasonweaver.name/">Sub 2 Item 1</a></li>
+                    <li class="item-with-ul"><a href="http://jasonweaver.name/">Sub 2 Item 2</a>
+                      <ul style="display: none;">
+                        <li><a href="http://jasonweaver.name/">Sub 3 Item 1</a></li>
+                        <li><a href="http://jasonweaver.name/">Sub 3 Item 2</a></li>
+                        <li><a href="http://jasonweaver.name/">Sub 3 Item 3</a></li>
+                      </ul>
+                    <span class="touch-button"><i class="navicon">▼</i></span></li>
+                  </ul>
+                <span class="touch-button"><i class="navicon">▼</i></span></li>
+              </ul>
+            <span class="touch-button active"><i class="navicon">▼</i></span></li>
+            <li class="item-with-ul"><a href="http://jasonweaver.name/">Item 3</a>
+              <ul class="" style="display: none;">
+                <li><a href="http://jasonweaver.name/">Sub 1 Item 1</a></li>
+                <li><a href="http://jasonweaver.name/">Sub 1 Item 2</a></li>
+                <li><a href="http://jasonweaver.name/">Sub 1 Item 3</a></li>
+              </ul>
+            <span class="touch-button"><i class="navicon">▼</i></span></li>
+            <li class="item-with-ul"><a href="">Item 4</a>
+              <ul class="" style="display: none;">
+                <li><a href="http://jasonweaver.name/">Sub 1 Item 1</a></li>
+                <li><a href="http://jasonweaver.name/">Sub 1 Item 2</a></li>
+                <li><a href="http://jasonweaver.name/">Sub 1 Item 3</a></li>
+              </ul>
+            <span class="touch-button"><i class="navicon">▼</i></span></li>
+            <li class="item-with-ul"><a href="http://jasonweaver.name/">Item 5</a>
+              <ul class="" style="display: none;">
+                <li><a href="http://jasonweaver.name/">Sub 1 Item 1</a></li>
+                <li><a href="http://jasonweaver.name/">Sub 1 Item 2</a></li>
+                <li><a href="http://jasonweaver.name/">Sub 1 Item 3</a></li>
+              </ul>
+            <span class="touch-button"><i class="navicon">▼</i></span></li>
+          </ul>
+        </nav>
 
         <div class="uk-slidenav-position" data-uk-slideshow>
             <ul class="uk-slideshow">
