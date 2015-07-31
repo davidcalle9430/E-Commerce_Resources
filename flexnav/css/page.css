@@ -1,0 +1,10 @@
+/* Globals */
+html,body,i,ul {
+  font: inherit;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: calibri;
+}
