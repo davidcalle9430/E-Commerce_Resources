@@ -10,7 +10,11 @@
     <link rel="stylesheet" href="Uikit/css/components/slideshow.min.css"/>
     <link rel="stylesheet" href="Uikit/css/components/dotnav.min.css"/>
     <link rel="stylesheet" href="flexnav/css/flexnav.css">
+    <link rel="stylesheet" href="flexnav/css/font-awesome.css">
+    <link rel="stylesheet" href="flexnav/css/page.css">
     <link rel="stylesheet" href="css/style.css"/>
+    <script type="text/javascript" src="//use.typekit.net/qyb8ood.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <script type="text/javascript" src="JQuery/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="Uikit/js/uikit.min.js"></script>
     <script type="text/javascript" src="Uikit/js/components/slideshow.min.js"></script>
@@ -18,8 +22,15 @@
     <script type="text/javascript" src="flexnav/js/jquery.flexnav.min.js"></script>
     <script type="text/javascript">
     jQuery(document).ready(function($){
-       $(".flexnav").flexNav({
-      });
+      $(".flexnav").flexNav({
+        'animationSpeed':     250,            // default for drop down animation speed
+        'transitionOpacity':  true,           // default for opacity animation
+        'buttonSelector':     '.menu-button', // default menu button class name
+        'hoverIntent':        false,          // Change to true for use with hoverIntent plugin
+        'hoverIntentTimeout': 150,            // hoverIntent default timeout
+        'calcItemWidths':     false,          // dynamically calcs top level nav item widths
+        'hover':              true            // would you like hover support?
+});
     });
     </script>
 
@@ -35,7 +46,7 @@
             <i class="navicon">▼</i>
           </span>
         </div>
-        <nav>
+        <nav style = "z-index: 400; position:relative;">
           <ul data-breakpoint="800" class="flexnav with-js opacity lg-screen">
             <li class="item-with-ul"><a href="">Item 1</a>
               <ul class="" style="display: none;">
@@ -46,7 +57,7 @@
               </ul>
             <span class="touch-button"><i class="navicon">▼</i></span></li>
             <li class="item-with-ul"><a href="/">Item 2</a>
-              <ul class="open" style="display: none;">
+              <ul class="" style="display: none;">
                 <li><a href="/">Sub 1 Item 1</a></li>
                 <li class="item-with-ul"><a href="/">Sub 1 Item 2</a>
                   <ul style="display: none;">
@@ -56,7 +67,7 @@
                   </ul>
                 <span class="touch-button"><i class="navicon">▼</i></span></li>
                 <li class="item-with-ul"><a href="http://jasonweaver.name/">Sub 1 Item 3</a>
-                  <ul style="display: none;" class="">
+                  <ul style="display: none;">
                     <li><a href="http://jasonweaver.name/">Sub 2 Item 1</a></li>
                     <li class="item-with-ul"><a href="http://jasonweaver.name/">Sub 2 Item 2</a>
                       <ul style="display: none;">
@@ -68,7 +79,7 @@
                   </ul>
                 <span class="touch-button"><i class="navicon">▼</i></span></li>
               </ul>
-            <span class="touch-button active"><i class="navicon">▼</i></span></li>
+            <span class="touch-button"><i class="navicon">▼</i></span></li>
             <li class="item-with-ul"><a href="http://jasonweaver.name/">Item 3</a>
               <ul class="" style="display: none;">
                 <li><a href="http://jasonweaver.name/">Sub 1 Item 1</a></li>
@@ -117,7 +128,7 @@
     </div>
 
     <div class="row product_preview">
-        <>
+
     </div>
 
   </body>
