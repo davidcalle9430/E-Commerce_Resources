@@ -1,8 +1,33 @@
-.container_img {
-    height:500px;
+.centered-block{
+  display: flex;
+  justify-content:center;
+  align-items:center;
 }
 
-.container_img img {
+.news-slideshow {
+    max-height:100px;
+}
+
+.news-slideshow img {
+  max-height:100%;
+  max-width: 100%;
+}
+
+.hot-sales-slider{
+  margin-top: 1em;
+  height:50px;
+}
+
+.hot-sales-slide{
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  width:80%;
+  height:200px;
+}
+
+.hot-sales-slide img {
   max-height:100%;
   max-width: 100%;
 }
