@@ -5,7 +5,8 @@
 }
 
 .news-slideshow {
-    max-height:100px;
+  min-height: 100px;
+  max-height:100px;
 }
 
 .news-slideshow img {
@@ -14,8 +15,6 @@
 }
 
 .hot-sales-slider{
-  margin-top: 1em;
-  height:50px;
 }
 
 .hot-sales-slide{
@@ -24,7 +23,6 @@
   margin-left: auto;
   margin-right: auto;
   width:80%;
-  height:200px;
 }
 
 .hot-sales-slide img {
