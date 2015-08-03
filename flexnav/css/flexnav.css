@@ -44,7 +44,7 @@ body {
     z-index: 2;
     overflow: hidden;
     color: #222222;
-    background: #a6a6a2;
+    background: #FFFFFF;
     border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
   .flexnav li ul {
     width: 100%; }
@@ -56,11 +56,11 @@ body {
     overflow: visible; }
   .flexnav li ul li a {
     display: block;
-    background: #b2b2af; }
+    background: #F2F2F2; }
   .flexnav ul li ul li a {
-    background: #bfbfbc; }
+    background: #E6E6E6; }
   .flexnav ul li ul li ul li a {
-    background: #cbcbc9; }
+    background: #BDBDbD; }
   .flexnav .touch-button {
     position: absolute;
     z-index: 999;
@@ -109,7 +109,7 @@ body {
       font-size: 16px;
       position: relative;
       top: 1em;
-      color: #666; }
+      color: #FFF; }
 
 @media all and (min-width: 800px) {
   body.one-page {
