@@ -40,12 +40,13 @@ body {
   .flexnav li a {
     position: relative;
     display: block;
-    padding: .96em;
+    padding: 1em;
     z-index: 2;
-    overflow: hidden;
+    overflow: hidden; }
+  .flexnav a{
     color: #222222;
     background: #FFFFFF;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
+  }
   .flexnav li ul {
     width: 100%; }
     .flexnav li ul li {
@@ -70,7 +71,7 @@ body {
     height: 50px;
     display: inline-block;
     background: #acaca1;
-    background: rgba(0, 0, 0, 0.075);
+    background: rgb(255, 255, 255);
     text-align: center; }
     .flexnav .touch-button:hover {
       cursor: pointer; }
@@ -109,7 +110,7 @@ body {
       font-size: 16px;
       position: relative;
       top: 1em;
-      color: #FFF; }
+      color: #000000; }
 
 @media all and (min-width: 800px) {
   body.one-page {
@@ -128,11 +129,9 @@ body {
       list-style: none;
       float: left;
       display: block;
-      background-color: #a6a6a2;
       overflow: visible;
       width: 20%; }
     .flexnav li a {
-      border-left: 1px solid #acaca1;
       border-bottom: none; }
     .flexnav li > ul {
       position: absolute;
@@ -143,8 +142,6 @@ body {
     .flexnav li ul li > ul {
       margin-left: 100%;
       top: 0; }
-    .flexnav li ul li a {
-      border-bottom: none; }
     .flexnav li ul.open {
       display: block;
       opacity: 1;
