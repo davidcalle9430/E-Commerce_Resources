@@ -6,3 +6,90 @@ body{
   margin-top: 5em;
   margin-bottom: 5em;
 }
+
+/*
+* Table properties
+*/
+
+table{
+  border-radius: 25px;
+  border: 2px solid #9C9C9C;
+}
+
+thead{
+  background: #7C7C7C;
+}
+
+thead tr td{
+  border: 2px solid #9C9C9C;
+}
+
+td{
+  padding: 20px;
+}
+
+thead tr td p{
+  color: #FFF;
+}
+
+tbody tr td p{
+  color: #000;
+}
+
+/*
+* Total properties
+*/
+
+.total{
+  padding: 5px;
+
+}
+
+.total .title{
+  border: 2px solid #9C9C9C;
+  background: #7C7C7C;
+  padding: 5px;
+}
+
+.total .title p{
+  color: #FFF;
+}
+
+.total .price{
+  padding: 5px;
+}
+
+.total .price p{
+  color: #000;
+}
+
+/*
+* checkout-button properties
+*/
+
+.checkout-button{
+  margin: 50px;
+}
+
+.checkout-button button{
+  display: block;
+  width: 100%;
+}
+
+/*
+* shipping and billing details
+*/
+
+.form{
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.form-dropdown{
+  margin-bottom: 3em;
+}
+
+.drop-down-button{
+  display: block;
+  width: 100%
+}

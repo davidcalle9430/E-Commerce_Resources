@@ -10,8 +10,6 @@
 
     <!-- Scripts -->
     <script src="JQuery/jquery-1.11.3.min.js"></script>
-    <script src="Uikit/js/uikit.min.js"></script>
-    <script src="Uikit/js/components/slider.js"></script>
   </head>
   <body>
 
@@ -19,12 +17,12 @@
 
       <!-- Banner -->
       <div class="col-md-12">
-        <img src="img/1170x350.png">
+        <img class="img-responsive" src="img/1170x350.png">
       </div>
 
       <!-- Flexnav -->
       <div class="col-md-12">
-        <img src="img/1170x50.png">
+        <img class="img-responsive" src="img/1170x50.png">
       </div>
 
       <!-- Name -->
@@ -34,33 +32,65 @@
         </div>
       </div>
 
-      <!-- Tabla -->
-      <div class="col-md-12">
-        <!-- Shopping cart -->
-        <table>
-          <thead>
-            <tr>
-              <td class="col-md-6">Item</td>
-              <td class="col-md-1">Talla</td>
-              <td class="col-md-1">Cantidad</td>
-              <td class="col-md-2">Valor unitario</td>
-              <td class="col-md-2">Valor total</td>
-              <td></td>
-              <td></td>
-            </tr>
-          </thead>
-          <tbody>
-          </tbody>
-        </table>
+      <!-- Shopping cart -->
+      <table>
+        <thead>
+          <tr>
+            <td class="col-xs-5"><p class="text-center">Item</p></td>
+            <td class="col-xs-1"><p class="text-center">Color</p></td>
+            <td class="col-xs-1"><p class="text-center">Talla</p></td>
+            <td class="col-xs-1"><p class="text-center">Cantidad</p></td>
+            <td class="col-xs-2"><p class="text-center">Valor unitario</p></td>
+            <td class="col-xs-2"><p class="text-center">Valor total</p></td>
+          </tr>
+        </thead>
 
-        <!-- Total -->
-        <table>
+        <tbody>
+          <tr>
+            <td><p class="text-center">Boxer hombre algodon</p></td>
+            <td><p class="text-center">Azul</p></td>
+            <td><p class="text-center">M</p></td>
+            <td><p class="text-center">Cantidad</p></td>
+            <td><p class="text-center">30 USD</p></td>
+            <td><p class="text-center">30 USD</p></td>
+          </tr>
+          <tr>
+            <td><p class="text-center">Pantaloneta hombre</p></td>
+            <td><p class="text-center">Verde</p></td>
+            <td><p class="text-center">M</p></td>
+            <td><p class="text-center">5</p></td>
+            <td><p class="text-center">5 USD</p></td>
+            <td><p class="text-center">50 USD</p></td>
+          </tr>
+          <tr>
+            <td><p class="text-center">Boxer hombre algodon</p></td>
+            <td><p class="text-center">Azul</p></td>
+            <td><p class="text-center">M</p></td>
+            <td><p class="text-center">2</p></td>
+            <td><p class="text-center">30 USD</p></td>
+            <td><p class="text-center">30 USD</p></td>
+          </tr>
+          <tr class="total">
+            <td class="title" colspan="5"><p class="text-center">TAX</p></td>
+            <td class="price"><p class="text-center price">30 USD</p></td>
+          </tr>
+          <tr class="total">
+            <td class="title" colspan="5"><p class="text-center">Total</p></td>
+            <td class="price"><p class="text-center">30 USD</p></td>
+          </tr>
+        </tbody>
 
-        </table>
+      </table>
 
+
+      <!-- Continue with checkout -->
+      <div class="checkout-button">
+        <div class="col-sm-12 col-sm-offset-0 col-md-2 col-md-offset-9 form">
+          <button class="btn btn-success btn-lg">Checkout</button>
+        </div>
       </div>
-    </div>
 
+    </div>
 
   </body>
 </html>
