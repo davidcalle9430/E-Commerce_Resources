@@ -32,6 +32,14 @@ thead tr td p{
   color: #FFF;
 }
 
+tbody tr{
+    border: 1px solid #9C9C9C;
+}
+
+tbody tr td{
+  background-color: #FFF;
+}
+
 tbody tr td p{
   color: #000;
 }
@@ -56,10 +64,12 @@ tbody tr td p{
 }
 
 .total .price{
+  background-color: #FFF;
   padding: 5px;
 }
 
 .total .price p{
+
   color: #000;
 }
 
