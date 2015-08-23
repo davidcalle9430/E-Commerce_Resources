@@ -5,7 +5,8 @@
 }
 
 .news-slideshow {
-    max-height:100px;
+  min-height: 100px;
+  max-height:100px;
 }
 
 .news-slideshow img {
@@ -14,8 +15,6 @@
 }
 
 .hot-sales-slider{
-  margin-top: 1em;
-  height:50px;
 }
 
 .hot-sales-slide{
@@ -24,10 +23,25 @@
   margin-left: auto;
   margin-right: auto;
   width:80%;
-  height:200px;
 }
 
 .hot-sales-slide img {
   max-height:100%;
   max-width: 100%;
+}
+
+.sign-up-form .sign-up-form-input{
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  min-width:80%;
+  max-width:80%;
+}
+
+.sign-up-form .sign-up-form-button{
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  white-space: normal;
+  width: 100%
 }
