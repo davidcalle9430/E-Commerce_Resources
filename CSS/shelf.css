@@ -1,0 +1,18 @@
+body{
+  background-color: #EEE;
+}
+
+.shelf-item{
+  margin: 1em;
+  padding: 1em;
+  background-color: #F6F6F6;
+}
+
+.responsive-btn{
+  display: block;
+  width: 100%;
+}
+
+.shelf-item .picture{
+  margin: auto;
+}
