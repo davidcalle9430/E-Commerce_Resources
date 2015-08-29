@@ -6,13 +6,13 @@
 
     <!-- Estilos -->
     <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="CSS/shelf.css"/>
+    <link rel="stylesheet" href="CSS/shopping-cart.css"/>
 
     <!-- Scripts -->
     <script src="JQuery/jquery-1.11.3.min.js"></script>
     <script src="Bootstrap/js/bootstrap.min.js"></script>
   </head>
-  <body>
+  <body class="billing">
 
     <div class="container">
 
@@ -25,7 +25,72 @@
       <div class="col-md-12">
         <img class="img-responsive" src="img/1170x50.png">
       </div>
+
+      <div class="col-md-12">
+        <div class="shopping-cart-name">
+          <h1 class="text-center">Shopping cart</h1>
+          <h1 class="text-center"><small>Billing information</small></h1>
+        </div>
+      </div>
+
+      <div class="col-xs-12">
+        <div class="col-sm-12 col-md-6 billing-data">
+          <div class="input-group item">
+            <span class="input-group-addon"> First name</span>
+            <input type="text" class="form-control text-center" placeholder="First name">
+          </div>
+          <div class="input-group item">
+            <span class="input-group-addon">Last name</span>
+            <input type="text" class="form-control text-center" placeholder="Last name">
+          </div>
+          <div class="input-group item">
+            <span class="input-group-addon">Billing address</span>
+            <input type="text" class="form-control text-center" placeholder="Billing address">
+          </div>
+          <div class="input-group item">
+            <span class="input-group-addon">City</span>
+            <input type="text" class="form-control text-center" placeholder="City">
+          </div>
+          <div class="btn-group ">
+            <button type="button" class="btn btn-default dropdown-toggle drop-down-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              State <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="#">United states</a></li>
+            </ul>
+          </div>
+          <div class="input-group">
+            <span class="input-group-addon">Zip Code</span>
+            <input type="text" class="form-control text-center" placeholder="Zip Code">
+          </div>
+          <div class="input-group">
+            <span class="input-group-addon">Telephone number</span>
+            <input type="text" class="form-control text-center" placeholder="Telephone number">
+          </div>
+          <div class="input-group">
+            <span class="input-group-addon">Email</span>
+            <input type="text" class="form-control text-center" placeholder="Email">
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <h3 class="text-center">Sign up and pay with paypal</h3>
+          <div class="input-group">
+            <span class="input-group-addon">Username</span>
+            <input type="text" class="form-control text-center" placeholder="Username">
+          </div>
+          <div class="input-group">
+            <span class="input-group-addon">Password</span>
+            <input type="password" class="form-control text-center" placeholder="Password">
+          </div>
+        </div>
+        <div class="col-xs-12">
+          <div class="col-sm-12 col-md-4 col-md-offset-8">
+            <button class="btn btn-success">Review order and continue</button>
+          </div>
+        </div>
+      </div>
     </div>
+
   </body>
 
 </html>
