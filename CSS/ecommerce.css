@@ -22,11 +22,53 @@ body{
 
 .body .product-preview{
     background-color: #F6F6F6;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+    padding-left: 15vw;
+    padding-right: 15vw;
 }
 
 .body .product-preview img{
-    height: 100%;
+    max-height: 50vh;
     max-width: 100%;
-    max-height: 100px;
+    display: block;
     margin: auto;
+}
+
+.body .slider{
+    background-color: #F00;
+}
+
+.body .slider ul{
+    background-color: #0F0;
+}
+
+.body .slider li{
+    background-color: #00F;
+    max-height: 15vh;
+}
+
+.body .slider li a{
+    background-color: #F00;
+}
+
+.body .slider li a img{
+    max-height: 100%;
+    height: auto;
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px){
+
+    .body .product-preview{
+        background-color: #F00;
+        padding: 0px;
+    }
+
+    .body .product-preview img{
+        max-height: 100%;
+        max-width: 100%;
+        display: block;
+        margin: auto;
+    }
 }
