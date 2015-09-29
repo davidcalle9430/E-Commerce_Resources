@@ -36,20 +36,23 @@ body{
 }
 
 .body .slider{
-    background-color: #F00;
+    background-color: #F6F6F6;
 }
 
 .body .slider ul{
-    background-color: #0F0;
+    background-color: #F6F6F6;
 }
 
 .body .slider li{
-    background-color: #00F;
-    max-height: 15vh;
+    background-color: #F6F6F6;
 }
 
 .body .slider li a{
-    background-color: #F00;
+    background-color: #F6F6F6;
+    height: 15vh;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .body .slider li a img{
