@@ -63,20 +63,19 @@ body{
 }
 
 .body .product-details{
-    background-color: #F6F6F6;
-    margin-top: 1vw;
-    margin-bottom: 1vw;
-    padding-top: 2vw;
-    padding-bottom: 2vw;
+    background-color: #F00;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     width: 70vw;
-    margin: auto;
+    height: 20vh;
 }
 
 .body .product-details .left-up{
     background-color: #F6F6F6;
     display: flex;
-    float: left;
-    height: 12vw;
+    height: 100%;
     width: 50%;
     justify-content: center;
     flex-direction: column;
@@ -95,15 +94,17 @@ body{
 
 .body .product-details .left-up .quantity{
     background-color: #F6F6F6;
-    padding: 0.5vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
 .body .product-details .right-down{
     background-color: #F6F6F6;
     display: flex;
-    float: right;
+    height: 100%;
     width: 50%;
-    height: 12vw;
     justify-content: center;
     flex-direction: column;
     align-items: center;
