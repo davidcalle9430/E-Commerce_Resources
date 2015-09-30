@@ -22,8 +22,8 @@ body{
 
 .body .product-preview{
     background-color: #F6F6F6;
-    padding-top: 3vw;
-    padding-bottom: 3vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
     padding-left: 15vw;
     padding-right: 15vw;
 }
@@ -36,8 +36,8 @@ body{
 }
 
 .body .product-preview .slider{
+    padding-top: 3vw;
     background-color: #F6F6F6;
-    padding: 3vw;
 }
 
 .body .product-preview .slider ul{
@@ -60,6 +60,53 @@ body{
     max-height: 100%;
     height: auto;
     width: 100%;
+}
+
+.body .product-details{
+    background-color: #F6F6F6;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    width: 70vw;
+    margin: auto;
+}
+
+.body .product-details .left-up{
+    background-color: #F6F6F6;
+    display: flex;
+    float: left;
+    height: 12vw;
+    width: 50%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.body .product-details .left-up .color{
+    background-color: #F6F6F6;
+    padding: 0.5vw;
+}
+
+.body .product-details .left-up .size{
+    background-color: #F6F6F6;
+    padding: 0.5vw;
+}
+
+.body .product-details .left-up .quantity{
+    background-color: #F6F6F6;
+    padding: 0.5vw;
+}
+
+.body .product-details .right-down{
+    background-color: #F6F6F6;
+    display: flex;
+    float: right;
+    width: 50%;
+    height: 12vw;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 @media only screen and (max-width: 768px){
