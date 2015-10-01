@@ -21,7 +21,7 @@ body{
 }
 
 .body .product-preview{
-    background-color: #F6F6F6;
+    background-color: #EEE;
     padding-top: 2vw;
     padding-bottom: 2vw;
     padding-left: 15vw;
@@ -37,19 +37,9 @@ body{
 
 .body .product-preview .slider{
     padding-top: 3vw;
-    background-color: #F6F6F6;
-}
-
-.body .product-preview .slider ul{
-    background-color: #F6F6F6;
-}
-
-.body .product-preview .slider ul li{
-    background-color: #F6F6F6;
 }
 
 .body .product-preview .slider ul li a{
-    background-color: #F6F6F6;
     height: 15vh;
     background-size: contain;
     background-position: center;
@@ -68,15 +58,11 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-left: 15vw;
-    padding-right: 15vw;
-    margin-top: 5vw;
-    margin-bottom: 5vw;
+    padding: 3vh 15vw 3vh 15vw;
     height: 25vh;
 }
 
 .body .product-details .left-up{
-    background-color: #F6F6F6;
     display: flex;
     height: 100%;
     width: 50%;
@@ -86,17 +72,14 @@ body{
 }
 
 .body .product-details .left-up .color{
-    background-color: #F6F6F6;
     margin: 0.5vw;
 }
 
 .body .product-details .left-up .size{
-    background-color: #F6F6F6;
     margin: 0.5vw;
 }
 
 .body .product-details .left-up .quantity{
-    background-color: #F6F6F6;
     margin-top: 0.5vw;
     margin-bottom: 0.5vw;
     padding-left: 20%;
@@ -104,7 +87,6 @@ body{
 }
 
 .body .product-details .right-down{
-    background-color: #F6F6F6;
     display: flex;
     height: 100%;
     width: 50%;
@@ -113,7 +95,9 @@ body{
     align-items: center;
 }
 
-
+.body .product-description{
+    padding: 3vh 15vw 3vh 15vw;
+}
 
 @media only screen and (max-width: 768px){
     .body .product-preview{
@@ -130,23 +114,19 @@ body{
     }
 
     .body .product-preview .slider{
-        background-color: #F6F6F6;
         padding-top: 1vw;
         padding-bottom: 1vw;
     }
 
     .body .product-preview .slider{
-        background-color: #F6F6F6;
         width: 100vw;
     }
 
     .body .product-preview .slider ul{
-        background-color: #F6F6F6;
         width: 100vw;
     }
 
     .body .product-preview .slider ul li{
-        background-color: #F6F6F6;
         width: 50vw;
     }
 
@@ -168,8 +148,6 @@ body{
         padding-left: 30%;
         padding-right: 30%;
     }
-
-
 
     .body .product-details .right-down{
         width: 100%;
