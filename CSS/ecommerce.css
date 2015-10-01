@@ -101,7 +101,6 @@ body{
 
 @media only screen and (max-width: 768px){
     .body .product-preview{
-        background-color: #F6F6F6;
         padding: 0px;
     }
 
@@ -134,22 +133,25 @@ body{
         display: flex;
         flex-direction: column;
         width: 100vw;
-        padding: 0px;
-        margin-top: 10vh;
-        margin-bottom: 5vh;
+        height: auto;
+        padding: 1vh 0 1vh 0;
     }
 
     .body .product-details .left-up{
+        padding: 3vh 0 1.5vh 0;
         width: 100%;
+        height: auto;
     }
 
     .body .product-details .left-up .quantity{
-        width: 100%;
         padding-left: 30%;
         padding-right: 30%;
+        width: 100%;
     }
 
     .body .product-details .right-down{
+        padding: 1.5vh 0 3vh 0;
         width: 100%;
+        height: auto;
     }
 }
