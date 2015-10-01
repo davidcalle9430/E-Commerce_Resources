@@ -4,10 +4,12 @@
 /* product preview */
 $(".thumbnail").click(function() {
 
-    var img = document.getElementsByClassName('thumbnail'),
-        style = img.currentStyle || window.getComputedStyle(img, false),
-        url = style.backgroundImage.slice(4, -1);
+    var img = document.getElementsByClassName('thumbnail');
+    console.log(img);
+    var style = img.currentStyle || window.getComputedStyle(img, false);
+    var url = style.backgroundImage.slice(4, -1);
         url = style.backgroundImage.slice(4, -1).replace(/"/g, "");
+    console.log("url = "+url);
     $("#main_photo").attr("src", url );
 });
 /* Quantity bar*/
