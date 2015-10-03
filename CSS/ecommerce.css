@@ -29,7 +29,7 @@ body{
 }
 
 .body .product-preview img{
-    max-height: 25vw;
+    height: 25vw;
     max-width: 100%;
     display: block;
     margin: auto;
@@ -105,7 +105,7 @@ body{
     }
 
     .body .product-preview img{
-        max-height: 50vw;
+        height: 50vw;
         max-width: 100%;
         padding: 5vw 0px 5vw 0px;
         display: block;
@@ -115,10 +115,8 @@ body{
     .body .product-preview .slider{
         padding-top: 1vw;
         padding-bottom: 1vw;
-    }
-
-    .body .product-preview .slider{
-        width: 100vw;
+        width: 100%;
+        right: 0px;
     }
 
     .body .product-preview .slider ul{
@@ -132,7 +130,7 @@ body{
     .body .product-details{
         display: flex;
         flex-direction: column;
-        width: 100vw;
+        width: 100%;
         height: auto;
         padding: 1vh 0 1vh 0;
     }
@@ -153,5 +151,9 @@ body{
         padding: 1.5vh 0 3vh 0;
         width: 100%;
         height: auto;
+    }
+
+    .body .product-description{
+        padding: 3vh 1vw 3vh 1vw;
     }
 }
