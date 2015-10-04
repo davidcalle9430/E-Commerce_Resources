@@ -1,6 +1,9 @@
 body{
   background-color: #EEE;
 }
+button {
+    outline:none;
+}
 
 .head{
     padding: 0px;
@@ -10,49 +13,69 @@ body{
     display: -webkit-flex;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 70vw;
 }
 
 .head img{
+    width: 100%;
     margin: auto;
 }
 
-.body{
-    display: block;
+.head .view-title{
+    text-align: center;
+    padding: 2vw 0 2vw 0;
 }
 
-.body .product-preview{
+.body{
+    padding: 0px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product .body{
+    align-items: stretch;
+}
+
+.product .body .product-preview{
     background-color: #EEE;
-    padding-top: 2vw;
-    padding-bottom: 2vw;
     padding-left: 15vw;
     padding-right: 15vw;
 }
 
-.body .product-preview img{
+.product .body .product-preview img{
     height: 25vw;
     max-width: 100%;
     display: block;
     margin: auto;
 }
 
-.body .product-preview .slider{
+.product .body .product-preview .slider{
+    display: block;
+    margin: auto;
     padding-top: 3vw;
 }
 
-.body .product-preview .slider ul li a{
+.product .body .product-preview .slider ul li a{
     height: 15vh;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.body .product-preview .slider ul li a img{
+.product .body .product-preview .slider ul li a img{
     max-height: 100%;
     height: auto;
     width: 100%;
 }
 
-.body .product-details{
+.product .body .product-details{
     background-color: #F6F6F6;
     display: flex;
     flex-direction: row;
@@ -62,7 +85,7 @@ body{
     height: 25vh;
 }
 
-.body .product-details .left-up{
+.product .body .product-details .left-up{
     display: flex;
     height: 100%;
     width: 50%;
@@ -71,22 +94,22 @@ body{
     align-items: center;
 }
 
-.body .product-details .left-up .color{
+.product .body .product-details .left-up .color{
     margin: 0.5vw;
 }
 
-.body .product-details .left-up .size{
+.product .body .product-details .left-up .size{
     margin: 0.5vw;
 }
 
-.body .product-details .left-up .quantity{
+.product .body .product-details .left-up .quantity{
     margin-top: 0.5vw;
     margin-bottom: 0.5vw;
     padding-left: 20%;
     padding-right: 20%;
 }
 
-.body .product-details .right-down{
+.product .body .product-details .right-down{
     display: flex;
     height: 100%;
     width: 50%;
@@ -95,16 +118,101 @@ body{
     align-items: center;
 }
 
-.body .product-description{
+.product .body .product-description{
     padding: 3vh 15vw 3vh 15vw;
 }
 
+.shopping-cart .body table{
+    width: 70%;
+    border-radius: 25px;
+    border: 2px solid #9C9C9C;
+    text-align: center;
+}
+
+.shopping-cart .body thead{
+    background: #7C7C7C;
+    color: #FFF;
+}
+
+.shopping-cart .body thead tr td{
+  border: 2px solid #9C9C9C;
+  padding: 3vh 0 3vh 0;
+}
+
+.shopping-cart .body td{
+    padding: 1.5vh 0 1.5vh 0;
+}
+
+.shopping-cart .body thead tr td p{
+  color: #FFF;
+}
+
+.shopping-cart .body tbody tr{
+    border: 1px solid #9C9C9C;
+}
+
+.shopping-cart .body tbody tr td{
+  background-color: #FFF;
+}
+
+.shopping-cart .body tbody tr td p{
+  color: #000;
+}
+
+.shopping-cart .body .total .title{
+  border: 2px solid #9C9C9C;
+  background: #7C7C7C;
+  padding: 1.5vh 0 1.5vh 0;
+  color: #FFF;
+}
+
+.shopping-cart .body .total .price{
+  background-color: #FFF;
+  padding: 5px;
+}
+
+.shopping-cart .body .total .price p{
+  color: #000;
+}
+
+.shopping-cart .body .next-button{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: flex-end;
+    width: 60%;
+    padding: 5vh 0 5vh 0;
+}
+
+.shopping-cart .body .next-button button{
+    height: 5vh;
+    width: 15vw;
+    background-color: #7C7C7C;
+    border: 2px solid #9C9C9C;
+    color: #FFF;
+}
+
+.shopping-cart .body .next-button button:hover{
+    height: 5vh;
+    width: 15vw;
+    background-color: #FFF;
+    border: 2px solid #9C9C9C;
+    color: #000;
+}
+
 @media only screen and (max-width: 768px){
-    .body .product-preview{
+    .head{
+        width:100vw;
+        max-width: 100%
+    }
+
+    .product .body .product-preview{
         padding: 0px;
     }
 
-    .body .product-preview img{
+    .product .body .product-preview img{
         height: 50vw;
         max-width: 100%;
         padding: 5vw 0px 5vw 0px;
@@ -112,22 +220,22 @@ body{
         margin: auto;
     }
 
-    .body .product-preview .slider{
+    .product .body .product-preview .slider{
         padding-top: 1vw;
         padding-bottom: 1vw;
         width: 100%;
         right: 0px;
     }
 
-    .body .product-preview .slider ul{
+    .product .body .product-preview .slider ul{
         width: 100vw;
     }
 
-    .body .product-preview .slider ul li{
+    .product .body .product-preview .slider ul li{
         width: 50vw;
     }
 
-    .body .product-details{
+    .product .body .product-details{
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -135,25 +243,42 @@ body{
         padding: 1vh 0 1vh 0;
     }
 
-    .body .product-details .left-up{
+    .product .body .product-details .left-up{
         padding: 3vh 0 1.5vh 0;
         width: 100%;
         height: auto;
     }
 
-    .body .product-details .left-up .quantity{
+    .product .body .product-details .left-up .quantity{
         padding-left: 30%;
         padding-right: 30%;
         width: 100%;
     }
 
-    .body .product-details .right-down{
+    .product .body .product-details .right-down{
         padding: 1.5vh 0 3vh 0;
         width: 100%;
         height: auto;
     }
 
-    .body .product-description{
+    .product .body .product-description{
         padding: 3vh 1vw 3vh 1vw;
+    }
+
+    .shopping-cart .body table{
+        width: 100%;
+    }
+
+    .shopping-cart .body .next-button{
+        width: 100%;
+        padding: 1vh 0 5vh 0;
+    }
+
+    .shopping-cart .body .next-button button{
+        width: 100%;
+    }
+
+    .shopping-cart .body .next-button button:hover{
+        width: 100%;
     }
 }
