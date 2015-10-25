@@ -175,7 +175,7 @@ button {
   color: #000;
 }
 
-.shopping-cart .body .next-button{
+.shopping-cart .body .next-prev-button{
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -186,20 +186,21 @@ button {
     padding: 5vh 0 5vh 0;
 }
 
-.shopping-cart .body .next-button button{
-    height: 5vh;
-    width: 15vw;
-    background-color: #7C7C7C;
-    border: 2px solid #9C9C9C;
-    color: #FFF;
-}
-
-.shopping-cart .body .next-button button:hover{
+.next-prev-button button{
     height: 5vh;
     width: 15vw;
     background-color: #FFF;
-    border: 2px solid #9C9C9C;
+    border: 1px solid #D8D8D8;
+    border: 0;
     color: #000;
+}
+
+.next-prev-button button:hover{
+    height: 5vh;
+    width: 15vw;
+    background-color: #A4A4A4;
+    border: 1px solid #D8D8D8;
+    color: #FFF;
 }
 
 .billing .body{
@@ -222,23 +223,11 @@ button {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    background-color: #F00;
+    background-color: #F6F6F6;
     flex-direction: column;
     align-items: center;
     padding: 3vh 1vw 3vh 1vw;
-    width: 35%;
-}
-
-.billing .body .payment{
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    background-color: #0F0;
-    flex-direction: column;
-    align-items: center;
-    width: 35%;
+    width: 40%;
 }
 
 .billing .body .text-input{
@@ -251,10 +240,7 @@ button {
     width: 100%;
     height: 4vh;
     margin: 0.5vh 0 0.5vh 0;
-    border: 2px solid #9C9C9C;
-    -moz-border-radius: 0px;
-    -webkit-border-radius: 3px 3px 0px 0px;
-    border-radius: 5px;
+    border: 1px solid #D8D8D8;
 }
 
 .billing .body .text-input label{
@@ -264,20 +250,24 @@ button {
     display: -webkit-flex;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    background-color: #E6E6E6;
+    padding: 0 0 0 1vw;
     height: 100%;
-    width: 30%;
-    background-color: #7C7C7C;
-    color: #FFF;
+    width: 25%;
+
+    color: #000;
+    font-weight: normal;
 }
 
 .billing .body .text-input input{
     align-items: center;
     justify-content: center;
+    padding: 0 0 0 1vw;
     border: 0px;
     height: 100%;
-    width: 70%;
-    text-align: center;
+    width: 75%;
+    text-align: left;
 }
 
 @media only screen and (max-width: 768px){
